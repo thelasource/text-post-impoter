@@ -46,7 +46,7 @@ function tlspi_insert_posts() {
 			
 			$new_post_id = wp_insert_post( $temp );
 			
-			echo "just added : ".$_POST['posts'][$i]['title']. " <a href='".admin_url('post.php?post='.$id.'&action=edit')."'>Edit</a> <br />";
+			echo "just added : ".$_POST['posts'][$i]['title']. " <a href='".admin_url('post.php?post='.$new_post_id.'&action=edit')."'>Edit</a> <br />";
 			
 			
 			if( !empty($first_img) ):
